@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
+    <title>LEARNERS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <!--  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+    <!-- start header -->
+
+    <header class=" max-w-5xl mx-auto relative">
+        <div
+            class="container max-w-7xl mx-auto  md:flex hidden sm:flex-row flex-col justify-between items-center mx-auto">
+            <div class="logo m-4">
+                <img class="h-[58px] w-[150px]" src="img/logo.png" alt="">
+            </div>
+            <div class=" flex md:flex-row flex-col gap-2" id="click">
+                <div class="item-logo flex items-center gap-2 mr-10">
+                    <div
+                        class="tutors aspect-square h-10 w-10 bg-[#fecc00] rounded-full text-lg font-black p-1 text-center">
+                        <i class="fa-solid fa-puzzle-piece text-white"></i>
+                    </div>
+                    <div class="text">
+                        <h3 class="md:text-[16px] text-[14px] font-black text-[#80cd5e]">Tutord and learning coaches
+                        </h3>
+                        <p class="md:text-[16px] text-[14px] text-[#535353]">Pre-k -8th grade in Denver,Co</p>
+                    </div>
+                </div>
+                <div class="item-logo flex items-center gap-2">
+                    <div class="tutors aspect-square h-10 w-10 bg-[#ff6633] rounded-full text-lg p-1 text-center">
+                        <i class="fa-solid fa-phone-volume text-white"></i>
+                    </div>
+                    <div class="text">
+                        <h3 class="md:text-[16px] text-[14px]  font-black text-[#80cd5e] font-black">303-907-7135</h3>
+                        <p class="md:text-[16px] text-[14px] text-[#535353]"> Call Us Now</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- and header -->
+
+    <!-- responsive menu -->
+    <nav class=" max-w-5xl mx-auto rounded-3xl bg-[#27749e] z-1 relative px-4 drop-shadow-[2px_3px_0_#164762]">
+        <div class="flex justify-between items-center">
+            <div class="md:hidden block w-[130px] h-[50px]">
+                <img src="img/contact-logo.png" alt="">
+            </div>
+            <div class="hidden md:flex mx-auto">
+                <ul class="navbar flex sm:flex-row flex-col items-center text-white py-1 gap-[28px]">
+                    <li class="nav-item hover:bg-[#84cc63] transition duration-700 ease-in-out py-2 rounded-md">
+                        <a class="lg:text-[16px] text-[14px] lg:px-4 px-2 nav-link text-[--primary-color]" href="">
+                            HOME</a>
+                    </li>
+                    <div class="relative inline-block text-left group">
+                        <div>
+                            <button type="button"
+                                class="inline-flex justify-center w-full lg:px-4 px-2 py-2 rounded-t-lg lg:text-[16px] text-[14px] font-medium text-[#ffff] hover:bg-[#84cc63] transition duration-700 ease-in-out"
+                                id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                ABOUT US
+                                <i class="fa-solid fa-caret-down md:pl-[40px] pl-[10px] pt-[2px]"></i>
+                            </button>
+                        </div>
+                        <div class="absolute left-0 top-6 mt-2 w-[164px] rounded-b-lg bg-[#84cc63] hidden group-hover:block"
+                            role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                            <div class="py-[10px]" role="none">
+                                <a href="#"
+                                    class="text-[#ffff] block lg:px-4 px-2 py-2 lg:text-[16px] text-[14px] border-t-2"
+                                    role="menuitem" tabindex="-1" id="menu-item-0">JOBS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <li class="nav-item hover:bg-[#84cc63] transition duration-700 ease-in-out py-2 rounded-md">
+                        <a class="lg:text-[16px] text-[14px] lg:px-4 px-2 nav-link" href=""> SERVICE</a>
+                    </li>
+                    <li class="nav-item hover:bg-[#84cc63] transition duration-700 ease-in-out py-2 rounded-md">
+                        <a class="lg:text-[16px] text-[14px] lg:px-4 px-2 nav-link" href=""> TUTORD AND COACHES</a>
+                    </li>
+                    <li class="nav-item hover:bg-[#84cc63] transition duration-700 ease-in-out py-2 rounded-md">
+                        <a class="lg:text-[16px] text-[14px] lg:px-4 px-2 nav-link" href=""> BLOG</a>
+                    </li>
+                    <li class="nav-item hover:bg-[#84cc63] transition duration-700 ease-in-out py-2 rounded-md">
+                        <a class="lg:text-[16px] text-[14px] lg:px-4 px-2 nav-link" href=""> CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn-1" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="men" class="md:hidden flex flex-col space-y-2 mt-2 hidden">
+            <ul class="navbar mx-auto sm:flex-row flex-col items-center justify-evenly text-center text-white py-1">
+                <li class="nav-item hover:bg-[#84cc63] py-2 rounded-md">
+                    <a class="md:text-[16px] text-[14px] px-6 nav-link text-[--primary-color]" href=""> HOME</a>
+                </li>
+                <div class="relative inline-block text-left group">
+                    <div>
+                        <button type="button"
+                            class="inline-flex justify-center w-full px-6 py-2 rounded-t-lg md:text-[16px] text-[14px] font-medium text-[#ffff] hover:bg-[#84cc63]"
+                            id="menu-button" aria-expanded="true" aria-haspopup="true">
+                            ABOUT US
+                            <i class="fa-solid fa-caret-down md:pl-[40px] pl-[10px] pt-[2px]"></i>
+                        </button>
+                    </div>
+                    <div class="absolute left-0 top-6 mt-2 w-[169px] rounded-b-lg bg-[#84cc63] hidden group-hover:block"
+                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                        <div class="py-[10px]" role="none">
+                            <a href="#" class="text-[#ffff] block px-6 py-2 md:text-[16px] text-[14px] border-t-2"
+                                role="menuitem" tabindex="-1" id="menu-item-0">JOBS</a>
+                        </div>
+                    </div>
+                </div>
+                <li class="nav-item hover:bg-[#84cc63] py-2 rounded-md">
+                    <a class="md:text-[16px] text-[14px] px-6 nav-link" href=""> SERVICE</a>
+                </li>
+                <li class="nav-item hover:bg-[#84cc63] py-2 rounded-md">
+                    <a class="md:text-[16px] text-[14px] px-6 nav-link" href=""> TUTORD AND COACHES</a>
+                </li>
+                <li class="nav-item hover:bg-[#84cc63] py-2 rounded-md">
+                    <a class="md:text-[16px] text-[14px] px-6 nav-link" href=""> BLOG</a>
+                </li>
+                <li class="nav-item hover:bg-[#84cc63] py-2 rounded-md">
+                    <a class="md:text-[16px] text-[14px] px-6 nav-link" href=""> CONTACT US</a>
+                </li>
+            </ul>
+            <div class=" flex md:flex-row sm:flex-row flex-col sm:justify-center text-center justify-center mx-auto gap-2"
+                id="click">
+                <div class="item-logo flex sm:flex-row flex-col items-center gap-2">
+                    <div
+                        class="tutors aspect-square h-10 w-10 bg-[#fecc00] rounded-full text-lg font-black p-1 text-center">
+                        <i class="fa-solid fa-puzzle-piece text-white"></i>
+                    </div>
+                    <div class="text">
+                        <h3 class="md:text-[16px] text-[14px] font-black text-[#80cd5e]">Tutord and learning coaches
+                        </h3>
+                        <p class="md:text-[16px] text-[14px] md:text-[#535353] text-[#ffff]">Pre-k -8th grade in
+                            Denver,Co</p>
+                    </div>
+                </div>
+                <div class="item-logo flex sm:flex-row flex-col items-center gap-2">
+                    <div class="tutors aspect-square h-10 w-10 bg-[#ff6633] rounded-full text-lg p-1 text-center">
+                        <i class="fa-solid fa-phone-volume text-white"></i>
+                    </div>
+                    <div class="text">
+                        <h3 class="md:text-[16px] text-[14px]  font-black text-[#80cd5e] font-black">303-907-7135</h3>
+                        <p class="md:text-[16px] text-[14px] md:text-[#535353] text-[#ffff]"> Call Us Now</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        document.getElementById('menu-btn-1').addEventListener('click', () => {
+            document.getElementById('men').classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- responsive menu -->
+
+    <!-- start section 1 -->
+
+    <section class="background-container md:h-[100vh] h-[75vh] -mt-6">
+        <div class="md:md:max-w-5xl w-[90%] mx-auto">
+            <h1
+                class="md:text-[45px] text-[26px] text-[#27749e] font-bold md:text-start text-center md:pt-36 pt-[4rem]">
+                WE HELP
+                KIDS <br> BECOME CAN DO
+            </h1>
+            <P class="md:text-[45px] text-[26px] text-[#7ece58] font-extrabold md:text-start text-center">LEARNERS</P>
+            <P class="py-5 md:text-start text-center text-[16px] text-[#535353] leading-6">Our tutoring and coaching
+                services for pre-K through 8th grade
+                help <br>
+                build confidence and create a learning environment so your kid can <br>
+                thrive in school.
+            </P>
+            <div class="flex md:justify-start justify-center">
+                <button
+                    class="md:text-[16px] text-[14px] rounded-full bg-[#84cc63] hover:bg-[#27749e] transition duration-700 ease-in-out px-10 py-4 text-[#ffff] md:mb-20 mb-10"><i
+                        class="fa-solid fa-arrow-right mr-2"></i>
+                    Get A Free
+                    consultation
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- and section  1-->
+
+    <!-- start section  2-->
+
+    <section class="container max-w-5xl w-[90%] mx-auto md:mb-20 mb-16">
+        <div class="title md:pb-16 pb-8 text-center">
+            <h2 class="md:text-[45px] text-[24px] text-[#27749e] font-extrabold text-center md:pt-10 pt-4">WHAT
+                <span class="text-[#84cc63]"> WE DO</span>
+            </h2>
+            <div class="flex justify-center mt-1">
+                <div class="w-[130px]">
+                    <img src="img/heading-line.png" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+        <div class="flex md:flex-row flex-col gap-10">
+            <div class="group text-center bg-[#f4f6fa] p-3 rounded-[55px] w-fit flex flex-col items-center gap-4 hover:-translate-y-8 transition duration-700 ease-in-out 
+                hover:text-[#ffff] hover:bg-[#7ece58] hover:bg-[#2f89b8]">
+                <div class="">
+                    <img class="rounded-[45px] border-[4px] border-white"
+                        src="img/portrait-young-man-while-studying-books.jpg" alt="" width="100%">
+                </div>
+                <h2
+                    class="md:text-[28px] text-18px text-[#27749e] group-hover:text-[#ffff] transition duration-1000 ease-in-out font-extrabold">
+                    TUTORING
+                </h2>
+                <P
+                    class="md:text-[16px] text-[14px] text-[#535353] group-hover:text-white transition duration-1000 ease-in-out leading-5">
+                    One-on-one tutoring
+                    by experienced
+                    teachers focusedon your student's needs.</P>
+                <div
+                    class="text-[#ffff] bg-[#7ecf57] group-hover:bg-[#2f89b8] rounded-full w-fit aspect-square h-[50px] flex items-center justify-center mt-[10px] -mb-10 rotate-[-45deg]">
+                    <i class="fa-solid fa-arrow-right text-[24px]"></i>
+                </div>
+            </div>
+            <div class="group text-center bg-[#f4f6fa] p-3 rounded-[55px] w-fit flex flex-col items-center gap-3 hover:-translate-y-8 transition duration-700 ease-in-out
+                hover:text-[#27749e] hover:text-[#535353 hover:bg-[] hover:bg-[#7ece58]">
+                <div class="">
+                    <img class="rounded-[45px] border-[4px] border-white"
+                        src="img/portrait-young-man-while-studying-books.jpg" alt="" width="100%">
+                </div>
+                <h2
+                    class="md:text-[28px] text-18px text-[#27749e] group-hover:text-[#ffff] transition duration-1000 ease-in-out font-extrabold">
+                    COACHING
+                </h2>
+                <P
+                    class="md:text-[16px] text-[14px] text-[#535353] group-hover:text-[white] transition duration-1000 ease-in-out leading-5">
+                    Our experienced
+                    educators guide parents and
+                    students in creating a positive learning environment.</P>
+                <div
+                    class="text-[#ffff] bg-[#7ecf57] group-hover:bg-[#2f89b8] rounded-full w-fit aspect-square h-[50px] flex items-center justify-center -mb-8 rotate-[-45deg]">
+                    <i class="fa-solid fa-arrow-right text-[24px]"></i>
+                </div>
+            </div>
+            <div class="group text-center bg-[#f4f6fa] p-3 rounded-[55px] w-fit lg:flex flex-col items-center gap-2 md:hidden flex flex-col hover:-translate-y-8 transition duration-700 ease-in-out
+                hover:text-[#ffff] hover:text-[white] hover:bg-[#2f89b8] hover:bg-[#7ece58]">
+                <div class="">
+                    <img class="rounded-[45px] border-[4px] border-white"
+                        src="img/portrait-young-man-while-studying-books.jpg" alt="" width="100%">
+                </div>
+                <h2
+                    class="md:text-[28px] text-18px text-[#27749e] group-hover:text-[#ffff] transition duration-1000 ease-in-out font-extrabold">
+                    EDUCATIONAL
+                    ADVOCACY</h2>
+                <P
+                    class="md:text-[16px] text-[14px] text-[#535353] group-hover:text-[white] transition duration-1000 ease-in-out leading-5">
+                    Get expert
+                    representation with creating
+                    and editing 504 & IEP plans.</P>
+                <div
+                    class="text-[#ffff] bg-[#7ecf57] group-hover:bg-[#2f89b8] rounded-full w-fit aspect-square h-[50px] flex items-center justify-center -mb-10 rotate-[-45deg]">
+                    <i class="fa-solid fa-arrow-right text-[24px]"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- and section  2-->
+
+    <!-- start section  3-->
+
+    <section class="confidence bg-[#f0f6fb] pb-[12rem]">
+        <div class="md:max-w-[992px] w-[90%] mx-auto title">
+            <h2 class="md:text-[36px] text-[24px] text-[#27749e] font-extrabold  text-center md:pt-20 pt-8">WHAT IS A
+                CAN
+                DO
+                <span class="md:text-[36px] text-[24px] text-[#84cc63] font-extrabold "> LEARNER</span>
+            </h2>
+            <div class="flex justify-center mt-1 md:pb-20 pb-8">
+                <div class="w-[130px]">
+                    <img src="img/heading-line.png" alt="" width="100%">
+                </div>
+            </div>
+            <div class="tools pb-5 mx-auto">
+                <div
+                    class="flex sm:flex-row flex-col md:items-center text-center justify-around md:gap-[12rem] gap-[1rem] md:pb-20 pb-4">
+                    <div class="icon-1 flex md:flex-row flex-col flex-col-reverse gap-5 items-center">
+                        <p class="md:text-[16px] text-[14px] font-black">WAS CONFIDENCE, TOOLS, <br> AND STRATEGIES TO
+                            TAKE <br>
+                            ON LEARNING CWALLENGES</p>
+                        <i
+                            class="fa-solid fa-snowflake h-20 w-20 bg-[#fecc00] rounded-full text-[45px] p-4 text-center text-white"></i>
+                    </div>
+                    <div class="icon-1 flex md:flex-row flex-col gap-5 items-center">
+                        <i
+                            class="fa-solid fa-trophy h-20 w-20 bg-[#ff6633] rounded-full text-[45px] p-4 text-center text-white"></i>
+                        <p class="md:text-[16px] text-[14px] font-black">RESILIENT LEARNERS <br> WHO CAN DO HARD <br>
+                            THINGS</p>
+                    </div>
+                </div>
+                <div
+                    class="flex sm:flex-row flex-col md:items-center text-center justify-between gap-0 gap-[1rem] pt-4">
+                    <div class="icon-1 flex md:flex-row flex-col flex-col-reverse gap-5 items-center">
+                        <p class="md:text-[16px] text-[14px] font-black md:text-right text-center">BELIEVES IN
+                            THEMSELVES <br> AND WAVE
+                            OTHER
+                            THAT <br> BELIEVES IN THEM</p>
+                        <i
+                            class="fa-solid fa-child-reaching h-20 w-20 bg-[#34cc32] rounded-full text-[45px] p-4 text-center text-white"></i>
+                    </div>
+                    <div class="icon-1 flex md:flex-row flex-col gap-5 items-center">
+                        <i
+                            class="fa-solid fa-user-graduate h-20 w-20 bg-[#0099fe] rounded-full text-[45px] p-4 text-center text-white"></i>
+                        <p class="md:text-[16px] text-[14px] font-black">THRIVES IN <br> SCHOOL AND ENJOYS <br> LEARNING
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="bg-white text-center md:w-[70%] w-[100%] mx-auto rounded-[30px] md:mt-[70px] mt-[8px] p-6 shadow-xl shadow-[#00000021] -mb-[272px]">
+                <p class="p-4 md:text-[16px] text-[14px]">Self-confidence is the key to solving learning challenges. Our
+                    goal is to work with
+                    children where they are <br> and teach them how to believe in themselves so that they
+                    can do ANYTHING</p>
+                <button
+                    class="border-[1px] rounded-[55px] border-[#7ece58] hover:bg-[#7ece58] transition duration-700 ease-in-out hover:text-[#ffff] md:text-[15px] text-[10px] font-bold text-[#7ece58] mb-5 py-4 px-8">LEARN
+                    MORE</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- and section  3-->
+
+    <!-- start section  4-->
+
+    <section class="text-center m-[15px]">
+        <div class="container max-w-4xl mx-auto title md:my-[80px] my-[30px]">
+            <h2 class="md:text-[36px] text-[24px] text-[#27749e] font-extrabold  text-center pt-20">WHERE IS YOUR
+                CHILD <br> STRUGGLING
+                <span class="md:text-[36px] text-24px text-[#84cc63] font-extrabold "> STRUGGLING</span> IN SCHOOL?
+            </h2>
+            <div class="flex justify-center mt-1 md:pb-10 pb-4">
+                <div class="w-[130px]">
+                    <img src="img/heading-line.png" alt="" width="100%">
+                </div>
+            </div>
+            <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 text-center">
+                <div
+                    class="bg-[#eaf9e6] border-[2px] rounded-[25px] border-[#cde9c59e] flex align-center justify-center flex-col items-center py-8">
+                    <div class="h-auto w-[80px]">
+                        <img src="img/book.png" alt="" width="100%">
+                    </div>
+                    <h2 class=" font-extrabold text-[#01ce34] md:text-[18px] text-[14px] mt-6">READING</h2>
+                </div>
+                <div
+                    class="bg-[#f0f6fb] border-[2px] rounded-[25px] border-[#e1e8ee] flex align-center justify-center flex-col items-center py-8">
+                    <div class="h-auto w-[80px]">
+                        <img src="img/writing.png" alt="" width="100%">
+                    </div>
+                    <h2 class=" font-extrabold text-[#1a516c] md:text-[18px] text-[14px] mt-6">HAND WRITING</h2>
+                </div>
+                <div
+                    class="bg-[#fff2f9] border-[1px] rounded-[25px] border-[#e9dce3] flex align-center justify-center flex-col items-center py-8">
+                    <div class="h-auto w-[80px]">
+                        <img src="img/math.png" alt="" width="100%">
+                    </div>
+                    <h2 class=" font-extrabold text-[#b70164] md:text-[18px] text-[14px] mt-6">MATH</h2>
+                </div>
+                <div
+                    class="bg-[#fffbea] border-[1px] rounded-[25px] border-[#d6d4cf] flex align-center justify-center flex-col items-center py-8">
+                    <div class="h-auto w-[80px]">
+                        <img src="img/homework.png" alt="" width="100%">
+                    </div>
+                    <h2 class=" font-extrabold text-[#fecc01] md:text-[18px] text-[14px] mt-6">WRITING</h2>
+                </div>
+            </div>
+
+
+            <div class="flex gap-6 text-center mt-6 md:flex-row flex-col items-center">
+                <div
+                    class="bg-[#fff2f2] border-[2px] rounded-[25px] border-[#ffe0e0] flex align-center justify-center flex-col items-center p-3 md:w-[212px] w-full">
+                    <div class="h-auto w-[85px] pt-5">
+                        <img src="img/languages.png" alt="" width="100%">
+                    </div>
+                    <p class=" font-extrabold text-[#ef335c] md:text-[16px] text-[12px] mt-6">DUAL LANGUAGE
+                        LEARNING</p>
+                </div>
+                <div
+                    class="bg-[#fff5ed] border-[2px] rounded-[25px] border-[#f6e2d3] flex align-center justify-center flex-col items-center p-3 md:w-[326px] w-full">
+                    <div class="h-auto w-[85px] pt-5">
+                        <img src="img/reading.png" alt="" width="100%">
+                    </div>
+                    <p class="font-extrabold text-[#fdb659] md:text-[13px] text-[14px] mt-6 ">LEARNING CHALLENGES WITH:
+                        ADHD, ASD(AUTISM), DYSLEXIA, LIMITED MEMORY,
+                        AND SLOW PROCESSING
+                    </p>
+                </div>
+                <div
+                    class="challenges bg-[#faf6fe] border-[2px] rounded-[25px] border-[#e7dcf3] flex align-center justify-center flex-col items-center p-3 md:w-[326px] w-full lg:block md:hidden block ">
+                    <div class="h-auto w-[85px] pt-5">
+                        <img src="img/9437442.jpg" alt="" width="100%">
+                    </div>
+                    <p class=" font-extrabold text-[#532da9] md:text-[13px] text-[14px] mt-6 ">EXECUTIVE FUNCTIONING
+                        CHALLENGES WITH: DISORGANIZATION,
+                        FORGETFULNESS AND AVOIDING RESPONSIBILITY</p>
+                </div>
+            </div>
+            <button
+                class="text-center md:text-[16px] text-[14px] rounded-[55px] font-bold bg-[#91d573] hover:bg-[#226f9a] transition duration-700 ease-in-out text-[#ffff] mt-5 py-4 px-8">VIEW
+                ALL SERVICES
+            </button>
+
+        </div>
+    </section>
+
+    <!-- and section  4-->
+
+    <!-- start section  5-->
+
+    <section class="bg-[#226f9a] mb-10">
+        <div class="container md:max-w-4xl md:w-[70%] w-[80%] mx-auto title">
+            <h2 class="md:text-[36px] text-[24px] text-[#ffff] font-extrabold  text-center md:pt-20 pt-6 pb-5">LET'S
+                <span class="md:text-[36px] text-[24px] text-[#84cc63] font-extrabold "> GET</span> STARTED?
+            </h2>
+            <p class="md:text-[16px] text-[14px] text-center text-[#ffff]">Let's chat about your child's learning
+                challenges and how to <br>
+                help them become Can Do Learners</p>
+
+            <form action=""
+                class="md:w-[80%] mx-auto bg-[#f6f6f6] md:p-12 p-8 rounded-[20px] text-center ring-[10px] ring-[#7baac1] mx-auto relative -bottom-[80px]">
+                <div class="flex sm:flex-row flex-col gap-2">
+                    <input type="Name" class="w-full px-5 py-4 mb-4 rounded-[8px] border-2 md:text-[16px] text-[14px]"
+                        id="floatingName" placeholder="First Name">
+                    <label for="floatingName"></label>
+
+                    <input type="Name" class="w-full px-5 py-4 mb-4 rounded-[8px] border-2 md:text-[16px] text-[14px]"
+                        id="floatingName" placeholder="Last Name">
+                    <label for="floatingName"></label>
+                </div>
+
+                <div>
+                    <input type="child's Name"
+                        class="w-full px-5 py-4 mb-4 rounded-[8px] border-2 md:text-[16px] text-[14px]"
+                        id="floatingchild's Name" placeholder="child's Name">
+                    <label for="floatingchild's Name"></label>
+                </div>
+
+                <div class="flex sm:flex-row flex-col gap-2">
+                    <input type="phone" class="w-full px-5 py-4 mb-4 rounded-[8px] border-2 md:text-[16px] text-[14px]"
+                        id="floatingphone" placeholder="phone">
+                    <label for="floatingphone"></label>
+
+                    <input type="email" class="w-full px-5 py-4 mb-4 rounded-[8px] border-2 md:text-[16px] text-[14px]"
+                        id="floatingemail" placeholder="emaile">
+                    <label for="floatingemail"></label>
+                </div>
+                <textarea placeholder="Where is your child currently struggling with learning?" class="w-full h-[100px] rounded-[8px] px-5 py-4 
+                border-2 md:text-[16px] text-[14px]"></textarea>
+                <button
+                    class="text-center md:text-[16px] text-[10px] rounded-[55px] hover:bg-[#226f9a] transition duration-700 ease-in-out font-bold bg-[#91d573] text-[#ffff] mt-5 py-4 px-8">Get
+                    Free Consultation
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- and section  5-->
+
+    <!-- start section  6-->
+
+    <section class="coaches">
+        <div class="container max-w-4xl m-auto title text-center">
+            <h2
+                class="md:text-[36px] text-[24px] text-[#27749e] font-extrabold  text-center md:pt-28 pt-[5rem] md:pb-4 pb-1">
+                MEET OUR
+                <span class="md:text-[36px] text-[24px] text-[#84cc63] font-extrabold ">TUTORS</span> &
+                <span class="md:text-[36px] text-[24px] text-[#84cc63] font-extrabold ">COACHES</span>
+            </h2>
+            <p class="md:text-[16px] text-[14px] text-center pb-2">Meet the Experts from Can DO Tutors that Help you and
+                Your Kids.</p>
+            <div class="flex justify-center mt-1 md:pb-8 pb-4">
+                <div class="w-[130px]">
+                    <img src="img/heading-line.png" alt="" width="100%">
+                </div>
+            </div>
+            <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5">
+                <div class="tutoring text-center bg-[#fff2f2] p-3 rounded-[30px] w-fit mx-auto">
+                    <img class="rounded-[30px] border-[4px] border-white w-[200px] md:h-[200px] h-[275px]"
+                        src="img/user-img-1.jpeg" alt="">
+                    <h2 class="md:text-[18px] text-[14px] font-bold text-[#27749e]  pt-3">BRUCE WRITE</h2>
+                    <P class="md:text-[16px] text-[14px] pb-1">Consultant</P>
+                </div>
+                <div class="tutoring text-center bg-[#eaf9e6] p-3 rounded-[30px] w-fit mx-auto">
+                    <img class="rounded-[30px] border-[4px] border-white w-[200px] md:h-[200px] h-[275px]"
+                        src="img/user-img-2.jpeg" alt="">
+                    <h2 class="md:text-[18px] text-[14px] font-bold text-[#27749e]  pt-3">NATASHA VEON</h2>
+                    <p class="md:text-[16px] text-[14px] pb-1">Private Tutor</p>
+                </div>
+                <div class="tutoring text-center bg-[#faf6fe] p-3 rounded-[30px] w-fit mx-auto">
+                    <img class="rounded-[30px] border-[4px] border-white w-[200px] md:h-[200px] h-[275px]"
+                        src="img/user-img-3.jpeg" alt="">
+                    <h2 class="md:text-[18px] text-[14px] font-bold text-[#27749e]  pt-3">DIANA JAMSON</h2>
+                    <p class="md:text-[16px] text-[14px] pb-1">Private Tutor</p>
+                </div>
+                <div class="tutoring text-center bg-[#fffbea] p-3 rounded-[30px] w-fit mx-auto">
+                    <img class="rounded-[30px] border-[4px] border-white w-[200px] md:h-[200px] h-[275px]"
+                        src="img/user-img-4.jpeg" alt="">
+                    <h2 class="md:text-[18px] text-[14px] font-bold text-[#27749e]  pt-3">BRUCE WRITE</h2>
+                    <p class="md:text-[16px] text-[14px] pb-1">Private Tutor</p>
+                </div>
+            </div>
+
+            <button
+                class="md:text-[16px] text-[14px] text-center rounded-[55px] font-bold border-2 border-[#84cc63] text-[#84cc63] hover:bg-[#84cc63] transition duration-700 ease-in-out hover:text-[#ffff] md:mt-8 mt-4 md:mb-16 mb-8  py-4 px-12">
+                MEET ALL TUTORS AND COACHES
+            </button>
+
+        </div>
+    </section>
+
+    <!-- and section  6-->
+
+    <!-- start section  7-->
+
+    <section class="bg-[#f4f6fa] mb-15">
+        <div class="container md:max-w-4xl w-[90%] m-auto title">
+            <h2 class="md:text-[36px] text-[24px] text-[#27749e] font-extrabold  text-center md:pt-20 pt-8">OUR CLIENT
+                <span class="md:text-[36px] text-[24px] text-[#84cc63] font-extrabold ">TESTIMONIALS </span>
+            </h2>
+            <div class="flex justify-center mt-1 md:pb-8 pb-4">
+                <div class="w-[130px]">
+                    <img src="img/heading-line.png" alt="" width="100%">
+                </div>
+            </div>
+            <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
+                <div class="bg-[#ffff] border-2 rounded-[40px] p-8">
+                    <p class="text-[16px] line-clamp-5 leading-6">"Lorem ipsum dolor sit assa itas iaaet, consectetur
+                        adipiscing elit. Morbi ssrfed viverra tortor.
+                        Suspendisse quis pulvinar arcu, nec posuere lectus. Duis volutpiat ex ut auctor ornareas asrit."
+                    </p>
+                    <div class="w-full flex items-center justify-between">
+                        <div class="">
+                            <p class="text-[#27749e] text-[16px] font-extrabold  pt-2">DIANA <span
+                                    class="text-[16px] text-[#84cc63] font-extrabold ">JAMSON</span></p>
+                            <i class="fa-solid fa-star text-[#ffcc00]"></i>
+                            <i class="fa-solid fa-star text-[#ffcc00]"></i>
+                            <i class="fa-solid fa-star text-[#ffcc00]"></i>
+                            <i class="fa-solid fa-star text-[#ffcc00]"></i>
+                            <i class="fa-solid fa-star text-[#ffcc00]"></i>
+                        </div>
+                        <div class="text-[40px]">
+                            <i class="fa-solid fa-quote-right text-[#e5edf1]"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#ffff] border-2 rounded-[40px] text-[12px] p-8">
+                    <p class="text-[16px] line-clamp-5 leading-6">"Lorem ipsum dolor sit assa itas iaaet, consectetur
+                        adipiscing elit. Morbi ssrfed viverra tortor.
+                        Suspendisse quis pulvinar arcu, nec posuere lectus. Duis volutpiat ex ut auctor ornareas asrit."
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div class="">
+                            <p class="text-[#27749e] text-[16px] font-extrabold ">DIANA <span
+                                    class="text-[16px] text-[#84cc63] font-extrabold ">DELIANCE</span></p>
+                            <i class="fa-solid fa-star text-[#ffcc00]"></i>
+                            <i class="fa-solid fa-star text-[#ffcc00]"></i>
+                            <i class="fa-solid fa-star text-[#ffcc00]"></i>
+                            <i class="fa-solid fa-star text-[#ffcc00]"></i>
+                            <i class="fa-solid fa-star text-[#ffcc00]"></i>
+                        </div>
+                        <div class="text-[40px]">
+                            <i class="fa-solid fa-quote-right text-[#e5edf1]"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#ffff] border-2 rounded-[40px] text-[16px] p-8">
+                    <p class="text-[16px] line-clamp-5 leading-6">"Lorem ipsum dolor sit assa itas iaaet, consectetur
+                        adipiscing elit. Morbi ssrfed viverra tortor.
+                        Suspendisse quis pulvinar arcu, nec posuere lectus. Duis volutpiat ex ut auctor ornareas asrit."
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div class="">
+                            <p class="text-[#27749e] text-[16px] font-extrabold  pt-2">DIANA <span
+                                    class="text-[16px] text-[#84cc63] font-extrabold ">FOX</span></p>
+                            <i class="fa-solid fa-star text-[#ffcc00]"></i>
+                            <i class="fa-solid fa-star text-[#ffcc00]"></i>
+                            <i class="fa-solid fa-star text-[#ffcc00]"></i>
+                            <i class="fa-solid fa-star text-[#ffcc00]"></i>
+                            <i class="fa-solid fa-star text-[#ffcc00]"></i>
+                        </div>
+                        <div class="text-[40px]">
+                            <i class="fa-solid fa-quote-right text-[#e5edf1]"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- and section  7-->
+
+    <!-- start section  8-->
+
+    <section class="Blog">
+        <div class="container max-w-4xl m-auto title">
+            <h2 class="md:text-[36px] text-[24px] text-[#27749e] font-extrabold  text-center md:pt-20 pt-6">FEATURED
+                BLOG
+                <span class="md:text-[36px] text-[24px] text-[#84cc63] font-extrabold "> POSTS </span>
+            </h2>
+            <div class="flex justify-center mt-2 md:pb-10 pb-2">
+                <div class="w-[130px]">
+                    <img src="img/heading-line.png" alt="" width="100%">
+                </div>
+            </div>
+            <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-0">
+                <div class="Blog-1 p-3 rounded-[40px] mx-auto">
+                    <img class="rounded-[30px] border-[6px] border-[#ffff] w-[275px] h-[222px] shadow-[0_0px_40px_-15px_rgba(0,0,0,0.0)] shadow-black"
+                        src="img/about-img-1.jpg" alt="">
+                    <p class="text-[#82ca60] text-[14px] font-bold pt-4">JANUARY 8, 2024</p>
+                    <h6 class="md:text-[16px] text-[14px] text-[#27749e] font-bold pt-2">Pellentesque sed nibh <br> ac
+                        tortor
+                        feugiat convallt ias.</h6>
+                    <P class="pb-4 text-[14px] leading-5 pt-2">Lorem ipsum dolor sit amet, conssect srttur <br>
+                        adipiscing elit.
+                        Morbi sed viverr...
+                    </P>
+                </div>
+                <div class="Blog-1 p-3 rounded-[40px] mx-auto">
+                    <img class="rounded-[30px] border-[6px] border-[#ffff] w-[275px] h-[222px] shadow-[0_0px_40px_-15px_rgba(0,0,0,0.0)] shadow-black"
+                        src="img/about-img-2.jpg" alt="">
+                    <p class="text-[#82ca60] text-[14px] font-bold pt-4">JANUARY 8, 2024</p>
+                    <h6 class="md:text-[16px] text-[14px] text-[#27749e] font-bold pt-2">Pellentesque sed nibh <br> ac
+                        tortor
+                        feugiat convallt ias.</h6>
+                    <p class="pb-4 text-[14px] leading-5 pt-2">Lorem ipsum dolor sit amet, conssect srttur <br>
+                        adipiscing elit.
+                        Morbi sed viverr...</p>
+                </div>
+                <div class="Blog-1 p-3 rounded-[40px] mx-auto">
+                    <img class="rounded-[30px] border-[6px] border-[#ffff] w-[275px] h-[222px] shadow-[0_0px_40px_-15px_rgba(0,0,0,0.0)] shadow-black"
+                        src="img/about-img-3.jpg" alt="">
+                    <p class="text-[#82ca60] text-[14px] font-bold pt-4">JANUARY 8, 2024</p>
+                    <h6 class="md:text-[16px] text-[14px] text-[#27749e] font-bold pt-2">Pellentesque sed nibh <br> ac
+                        tortor
+                        feugiat convallt ias.</h6>
+                    <p class="pb-4 text-[14px] leading-5 pt-2">Lorem ipsum dolor sit amet, conssect srttur <br>
+                        adipiscing elit.
+                        Morbi sed viverr...</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button
+                    class="md:text-[16px] text-[14px] text-center rounded-[55px] hover:bg-[#84cc63] transition duration-700 ease-in-out hover:text-[#ffff] font-bold border-2 border-[#84cc63] text-[#84cc63] md:mt-8 mt-2 md:mb-20 mb-8 py-4 px-10">
+                    READ ALL OUR BLOGS
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- and section  8-->
+
+    <!-- start section   9-->
+
+    <section class="bg-[#236c93]">
+        <div class="container max-w-4xl m-auto title">
+            <h2 class="md:text-[36px] text-[24px] text-[#ffff] font-extrabold  text-center md:pt-20 pt-8 pb-4">SUBSCRIBE
+                TO CAN
+                DO
+                INSIGHTS </h2>
+            <p class="md:text-[16px] text-[14px] text-center pb-8 text-[#ffff]">Receive weekly emails with resources and
+                advice from our Tutors and
+                Learning Coaches</p>
+
+            <div class="md:pb-12 pb-4 text-center w-[90%] mx-auto">
+                <div class="flex sm:flex-row flex-col gap-2 justify-center">
+                    <input type="Name"
+                        class="md:w-[40%] w-[80%] px-5 py-[10px] rounded-[35px] border-2 text-[12px] mx-auto"
+                        id="floatingName" placeholder="Your Name:">
+                    <label for="floatingName"></label>
+
+                    <input type="email"
+                        class="md:w-[40%] w-[80%] px-5 py-[10px] rounded-[35px] border-2 text-[12px] mx-auto"
+                        id="floatingemail" placeholder="Your email:">
+                    <label for="floatingemail"></label>
+                    <div class="md:w-[22%] w-[100%]">
+                        <button
+                            class="SUBSCRIBE md:text-[14px] text-[12px] rounded-[55px] border-2 border-[#84cc63] bg-[#7ecf58] text-[#ffff] py-3 px-6">
+                            SUBSCRIBE ME
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="md:pb-14 pb-4">
+                <img src="img/contact.png" alt="">
+            </div>
+            <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-16 gap-4 md:pb-20 pb-8">
+                <div class="">
+                    <div class="">
+                        <img class="pb-3 sm:w-[200px] w-[50%] h-auto m-auto" src="img/contact-logo.png" alt="">
+                    </div>
+                    <p class="text-[#ffff] text-center text-[14px] pb-4">Can Do Learners offers private tutoring and
+                        learning
+                        coaching services in Denver, CO.</p>
+                    <div class="flex justify-center gap-3">
+                        <i
+                            class="fa-brands fa-square-facebook text-[#ffff] border-[1px] border-[#3a7ca1] p-3 rounded-[50%] bg-[#216486]"></i>
+                        <i
+                            class="fa-brands fa-instagram text-[#ffff] border-[1px] border-[#3a7ca1] p-3 rounded-[50%] bg-[#216486]"></i>
+                        <i
+                            class="fa-brands fa-youtube text-[#ffff] border-[1px] border-[#3a7ca1] p-3 rounded-[50%] bg-[#216486]"></i>
+                    </div>
+                </div>
+                <div class="mx-auto">
+                    <h2 class="text-[24px] text-[#ffff] font-extrabold ">CONTACT US</h2>
+                    <div class="flex items-center gap-5 pt-4">
+                        <i class="fa-solid fa-location-dot text-[#7ecd5a] text-[20px]"></i>
+                        <p class="text-[#ffff] text-[14px]">CAND DO LEARNERS <br> Denver, CO</p>
+                    </div>
+                    <p class="pb-3"><a href="" class="text-[12px] text-[#7ecd5a] ml-[36px]">VIEW MAP & DIRECTION</a></p>
+                    <div class="flex items-center gap-4 pb-4">
+                        <i class="fa-solid fa-tty text-[#7ecd5a] text-[20px]"></i>
+                        <div>
+                            <p class="text-[#ffff] text-[14px]">call us</p>
+                            <p class="text-[#ffff] text-[15px] font-bold">303-907-7135</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 pb-4">
+                        <i class="fa-solid fa-envelope text-[#7ecd5a] text-[20px]"></i>
+                        <div>
+                            <p class="text-[#ffff] text-[14px]">email us</p>
+                            <p class="text-[#ffff] text-[14px]">info@candolearners.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-auto">
+                    <h2 class="text-[24px] text-[#ffff] font-extrabold ">QUICK LINKS</h2>
+                    <ul class="text-[#ffff] pt-2 md:text-start text-center">
+                        <li class="pt-[10px] text-[14px]"><a href="">About Us</a></li>
+                        <li class="pt-[10px] text-[14px]"><a href="">Services</a></li>
+                        <li class="pt-[10px] text-[14px]"><a href="">Tutors</a></li>
+                        <li class="pt-[10px] text-[14px]"><a href="">Home</a></li>
+                        <li class="pt-[10px] text-[14px]"><a href="">Blog</a></li>
+                        <li class="pt-[10px] text-[14px]"><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center bg-[#154159]">
+            <p class="text-[16px] text-[#cbe5f1] pt-4 pb-4">© 2024 CAN DO LEARNERS. All Rights Reserved.</p>
+        </div>
+    </section>
+
+    <!-- and section  9-->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
